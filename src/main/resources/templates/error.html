@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+  Name: Guanzhang He
+  Student ID: S1580804
+  BIT235 Assessment 2 - Part A: Wiki Administrator Login and User Authentication
+-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="/css/style.css">
+</head>
+<body>
+    <!-- Error page: shows the failure message passed from the controller -->
+    <div class="card error-card">
+        <h1>Login Failed</h1>
+        <p class="error-message" th:text="${error}">Invalid username or password.</p>
+
+        <!-- Link back to the login page to retry -->
+        <a th:href="@{/login}" href="/login" class="link-btn">Try Again</a>
+    </div>
+</body>
+</html>
