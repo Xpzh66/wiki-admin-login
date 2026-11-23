@@ -49,7 +49,13 @@ src/main/resources
 ## How to run
 
 1. Make sure JDK 17 and Maven are installed.
-2. In the project root, run:
+2. In the project root, run (Maven wrapper, no system Maven required):
+
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+   Or with a system-installed Maven:
 
    ```bash
    mvn spring-boot:run
